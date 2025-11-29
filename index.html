@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
-</head>
-<body>
-    Testing vs code with git and github <br>
+    <meta name="description" content="Relearning HTML for the purpose of software development">
+    <meta name="keywords" content="HTML, tutorial, beginners">
+    <meta name="author" content="Solace Coder">
+    <meta http-equiv="refresh" content="30">
 
-    A <sup>superscript</sup>
-    A <sub>subscript</sub>
+</head>
+<body style="background-color: aliceblue;">
+    <h1>Testing vs code with git and github</h1>
+
+    <iframe style="border: 0;" src="https://solacedatasolutions.com.ng/" width="750" height="250"></iframe>
+    <iframe style="border: 0;" src="ad.html" width="750" height="100"></iframe><br>
+
+   <strong>A <sup style="color: rgb(255, 0, 0)">superscript</sup></strong>
+    <i>A <sub>subscript</sub></i>
     <hr>
     
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href="https://solacedatasolutions.com.ng" target="_blank" title="Solace Data Solutions Website">
-        Corrupti,</a> rem.
+    <p style="background-color: #e46161; color: hsl(0, 0%, 100%);">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href="https://solacedatasolutions.com.ng" target="_blank" title="Solace Data Solutions Website">
+        Corrupti,</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio velit vitae exercitationem? 
+        Ratione minima quia veniam, adipisci quo voluptates dicta aliquam reprehenderit quaerat commodi molestias architecto, delectus, doloribus consequuntur..
     <!--use targe blank if only the link is an external site-->
     </p>
 
-    <!--Table-->
+    <div style="background-color: rgb(255, 248, 220);">
+    <p>
+        Lorem ipsum dolor sit, <span style="color: #ffd700;">consectetur adipisicing elit. Consequuntur, omnis vitae 
+        dolorum delectus dicta fugiat</span>, deserunt sint illo nisi quae nulla veniam! Deleniti nihil minima officia, illum eveniet temporibus ratione?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, beatae incidunt. In doloremque consequuntur quasi officia facilis. 
+        Quo doloremque officia cumque laboriosam necessitatibus libero. Doloremque nesciunt libero blanditiis voluptatem dolor?
+    </p>
+    </div>
+
+   <!--Table-->
    <table>
     <thead>
         <tr>
@@ -67,5 +89,113 @@
     <dt>SDS</dt>
     <dd>Solace Data Solutions</dd>
    </dl>
+
+   <h3>Services Available</h3>
+
+   <table bgcolor="blue" width="700">
+    <tr bgcolor="aqua">
+        <th width="100">Sunday</th>
+        <th width="100">Monday</th>
+        <th width="100">Tuesday</th>
+        <th width="100">Wednesday</th>
+        <th width="100">Thursday</th>
+        <th width="100">Friday</th>
+        <th width="100">Saturday</th>
+    </tr>
+    <tr bgcolor="lightblue" align="center">
+        <td >24hrs</td>
+        <td>24hrs</td>
+        <td>24hrs</td>
+        <td>24hrs</td>
+        <td>24hrs</td>
+        <td>24hrs</td>
+        <td>24hrs</td>
+    </tr>
+   </table><br>
+
+   <a href="https://solacedatasolutions.com.ng/">
+    <button style="background-color: rgb(73, 58, 58); color: #f5f5f5; border-radius: 5px;">Click me</button>
+   </a><br><br>
+
+   <button onclick="doSomething()" style="background-color: rgb(73, 58, 58); color: #f5f5f5; border-radius: 5px;">Click me</button>
+
+   <p id="test">Hello</p>
+
+   <script>
+    function doSomething(){
+        document.getElementById("test").innerHTML = "Goodbye";
+    }
+   </script>
+
+   <form action="#" method="post">
+    <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="first-name" placeholder="Enter Your First Name" required>
+    </div><br>
+
+    <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="last-name" placeholder="Enter Your Last Name" required>
+    </div><br>
+
+     <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password" placeholder="At least 8 characters" maxlength="12" required>
+    </div><br>
+
+     <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your email address" required>
+    </div><br>
+
+     <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+234......." required>
+    </div><br>
+
+     <div>
+        <label for="bdate">Birth Date:</label>
+        <input type="date" id="bdate" name="bdate" required>
+    </div><br>
+
+     <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+    </div><br>
+
+     <div>
+        <label for="title">Title:</label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title" value="Mr.">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+        <labe for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." name="title" value="PhD.">
+    </div><br>
+
+    <div>
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="giftcard">Giftcard</option>
+        </select>
+    </div><br>
+
+    <div>
+        <label for="subscribe">Subscribe:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+    </div><br>
+
+    <div>
+        <input type="submit">
+    </div>
+    
+
+    </form>
+    
 </body>
 </html>
